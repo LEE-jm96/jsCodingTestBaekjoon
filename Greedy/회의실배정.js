@@ -10,8 +10,7 @@ meeting.sort((a, b) => {
     
     if (aEndTime > bEndTime) return 1;
     else if (aEndTime < bEndTime) return -1;
-    
-    if (aEndTime === bEndTime) {
+    else {
         const aStartTime = Number(a.split(" ")[0]);
         const bStartTime = Number(b.split(" ")[0]);
         
