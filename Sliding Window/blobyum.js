@@ -3,7 +3,7 @@ const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
 
 const [n, k] = input[0].split(" ").map(Number);
 const tasteScores = input[1].split(" ").map(Number);
-const extendedTastes = arr.slice(0, k);
+const extendedTastes = tasteScores.slice(0, k);
 
 const applepies = [...tasteScores, ...extendedTastes];
 let windowSum = 0;
