@@ -7,7 +7,7 @@ Solution = (input) => {
 
     let min = Infinity;
     
-    for (let i = 0; i <= input.length; i++) {
+    for (let i = 0; i < input.length; i++) {
          const sliceStr = doubled.slice(i, i + aCnt);
          const bCnt = sliceStr.filter(str => str === "b").length;
          if (bCnt < min) min = bCnt;
