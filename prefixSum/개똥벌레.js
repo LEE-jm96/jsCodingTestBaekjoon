@@ -12,9 +12,7 @@ const Solution = (h, arr) => {
             cave[1]++;
             cave[arr[i] + 1]--;
         } else {
-            const start = h - arr[i] + 1;
-            cave[start]++;
-            cave[h + 1]--;
+            cave[h - arr[i] + 1]++;
         }
     }
 
